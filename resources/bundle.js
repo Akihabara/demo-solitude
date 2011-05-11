@@ -1,15 +1,15 @@
 {
 	// Graphic resources.
-	addImage:[	
-		["logo","resources/solitude/logo.png"],
-		["sea","resources/solitude/sea.png"],
-		["seaside","resources/solitude/seaside.png"],
-		["seaside2","resources/solitude/seaside2.png"],
-		["beach","resources/solitude/beach.png"],
-		["beach2","resources/solitude/beach2.png"],
-		["sprites","resources/solitude/cels.png"],
-		["fontbig","resources/solitude/fontbig.png"],
-		["font","resources/solitude/font.png"]
+	addImage:[
+		["logo","resources/logo.png"],
+		["sea","resources/sea.png"],
+		["seaside","resources/seaside.png"],
+		["seaside2","resources/seaside2.png"],
+		["beach","resources/beach.png"],
+		["beach2","resources/beach2.png"],
+		["sprites","resources/cels.png"],
+		["fontbig","resources/fontbig.png"],
+		["font","resources/font.png"]
 	],
 	addFont:[
 		{id:"small",image:"font",firstletter:" ",tileh:8,tilew:8,tilerow:255,gapx:0,gapy:32},
@@ -29,13 +29,13 @@
 		{id:"symbols",image:"sprites",tileh:13,tilew:17,tilerow:1,gapx:0,gapy:306},
 		{id:"faces",image:"sprites",tileh:50,tilew:50,tilerow:7,gapx:0,gapy:319}
 	],
-	
-	// Audio resources	
+
+	// Audio resources
 	addAudio:[
-		["default-music",[audioserver+"solitude-intro.mp3",audioserver+"solitude-intro.ogg"],{channel:"bgmusic",loop:true}],
-		["ingame",[audioserver+"solitude-ingame.mp3",audioserver+"solitude-ingame.ogg"],{channel:"bgmusic",loop:true}],
-		["ending",[audioserver+"solitude-ending.mp3",audioserver+"solitude-ending.ogg"],{channel:"bgmusic",loop:true}],
-		["boss",[audioserver+"solitude-boss.mp3",audioserver+"solitude-boss.ogg"],{channel:"bgmusic",loop:true}],		
+		["default-music",[audioserver+"intro.mp3",audioserver+"intro.ogg"],{channel:"bgmusic",loop:true}],
+		["ingame",[audioserver+"ingame.mp3",audioserver+"ingame.ogg"],{channel:"bgmusic",loop:true}],
+		["ending",[audioserver+"ending.mp3",audioserver+"ending.ogg"],{channel:"bgmusic",loop:true}],
+		["boss",[audioserver+"boss.mp3",audioserver+"boss.ogg"],{channel:"bgmusic",loop:true}],
 		["default-menu-option",[audioserver+"select.mp3",audioserver+"select.ogg"],{channel:"sfx"}],
 		["default-menu-confirm",[audioserver+"start.mp3",audioserver+"start.ogg"],{channel:"sfx"}],
 		["explosion",[audioserver+"explosion.mp3",audioserver+"explosion.ogg"],{channel:"sfx"}],
@@ -46,19 +46,19 @@
 		["foefire",[audioserver+"eat.mp3",audioserver+"eat.ogg"],{channel:"sfx"}],
 		["laser",[audioserver+"laser.mp3",audioserver+"laser.ogg"],{channel:"sfx",volume:0.5}]
 	],
-	
+
 	// Sub-resource files.
 	addBundle:[
 		// This file contains dialogue data
-		{file:"resources/solitude/bundle-dialogues.js"},
+		{file:"resources/bundle-dialogues.js"},
 
 		// Enemies logic and models
-		{file:"resources/solitude/bundle-enemies.js"},
-		
+		{file:"resources/bundle-enemies.js"},
+
 		// These are stage data
-		{file:"resources/solitude/bundle-attractmode.js"},
-		{file:"resources/solitude/bundle-stage1.js"}
-		// {file:"resources/solitude/bundle-stage2.js"}, // For now stage2 is only a placeholder. Uncomment and start developing!
-		
+		{file:"resources/bundle-attractmode.js"},
+		{file:"resources/bundle-stage1.js"}
+		// {file:"resources/bundle-stage2.js"}, // For now stage2 is only a placeholder. Uncomment and start developing!
+
 	]
 }
